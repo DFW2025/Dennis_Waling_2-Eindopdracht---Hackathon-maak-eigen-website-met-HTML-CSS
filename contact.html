@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- hier zet je de code in de head tags -->
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Sofia|Trirong">
+    <title> Eindopdracht !! Maak een website !!</title>
+</head>
+
+<body>
+    <!-- hier zet je de code in de body tags-->
+    <div class="gridcontainer">
+        <!-- Header-->
+        <header class="header">
+            <h1 class="a">Maak een afspraak</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">
+                            <h2>Home</h2>
+                        </a></li>
+                    <li><a href="projecten.html">
+                            <h2>Projecten</h2>
+                        </a></li>
+                    <li><a href="contact.html">
+                            <h2>Contact</h2>
+                        </a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Main-->
+        <main class="articles">
+            <form class="contact" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                <h1 class="hrafter">U kunt contact met ons opnemen met onderstaand formulier:</h1>
+                <label for="username">Naam:</label><br>
+                <input type="text" id="username" name="username" size="25"><br><br>
+                <label for="email">Emailadres:</label><br>
+                <input type="email" id="email" name="email" size="25"><br><br>
+                <label for="telefoonnummer">Telefoonnummer:</label><br>
+                <input type="tel" id="telefoonnummer" name="telefoonnummer" value="o6-"><br><br>
+                <label for="leeftijd">Leeftijd:</label><br>
+                <input type="number" id="leeftijd" name="leeftijd"><br><br>
+                <p>Geslacht:</p>
+                <group class="inline-radio">
+                    <label for="man" class="man">Man</label><br>
+                    <input type="radio" name="geslacht:" value="Man"><br><br>
+                    <label for="vrouw" class="vrouw">Vrouw</label><br>
+                    <input type="radio" name="geslacht:" value="Vrouw"><br><br>
+                </group>
+                <p>Werkzaamheden:</p>
+                <group class="inline-checkbox">
+                    <label for="Werkzaamheden1" class="montage">Montage</label><br>
+                    <input type="checkbox" name="Werkzaamheden1" id="Werkzaamheden1" value="Montage"><br><br>
+                    <label for="Werkzaamheden2" class="timmerwerk">Timmerwerk</label><br>
+                    <input type="checkbox" name="Werkzaamheden2" value="Timmerwerk"><br><br>
+                    <label for="Werkzaamheden3" class="anders">Anders</label><br>
+                    <input type="checkbox" name="Werkzaamheden3" value="Anders"><br><br>
+                </group>
+                <label for="opdracht">Beschrijf uw werkzaamheden:</label><br>
+                <textarea id="biografie" name="biografie" cols="50" rows="10"></textarea><br><br>
+                <group class="inline-sendbutton">
+                    <div data-netlify-recaptcha="true"></div>
+                    <input type="reset" id="reset" name="reset"><br><br>
+                    <input type="submit" id="submit" name="submit"><br><br>
+                </group>
+            </form>
+        </main>
+        <!-- Sidebar-->
+        <aside class="widget">
+            <ul class="a">
+                <h1 class="hrafter">IN 3 STAPPEN:</h1>
+                <li class="hrafter"> <a href="contact.html">Inmeten</a></li>
+                <li class="hrafter"> <a href="contact.html">Bestellen</a></li>
+                <li class="hrafter"> <a href="contact.html">Leveren</a></li>
+            </ul>
+            <figure>
+                <img src="images/Deur3.jpg" alt="DFW Deuren..." />
+                <iframe class="videoWrapper" src="https://www.youtube.com/embed/o2NFlKDr7i8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </figure>
+        </aside>
+        <!-- Footer-->
+        <footer class="footer">
+            <section class="footer1">
+                <h1>DIENSTEN</h1>
+                <ul>
+                    <li> Vloeren Leggen</li>
+                    <li> Deur Montage</li>
+                    <li> Kozijn Montage</li>
+                    <li> Timmerwerk en Aftimmeren</li>
+                </ul>
+            </section>
+            <section class="footer2">
+                <address>
+                    <p>Please contact <a id="green-background" href="mailto:dfw@example.com">Dennis Waling</a> for
+                        questions
+                        about this webpage.</p>
+                </address>
+            </section>
+            <section class="footer3">
+                <img src="https://veiligwerk.net/image/logo.png" alt="Erkend vakwerk.." />
+                <p>Wij zijn beschikbaar voor al uw klussen in en rondom uw huis!</p>
+            </section>
+        </footer>
+    </div><!-- Maincontainer DIV-->
+</body>
+
+</html>
